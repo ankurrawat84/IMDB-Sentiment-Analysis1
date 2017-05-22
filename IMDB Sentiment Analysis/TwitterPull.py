@@ -16,9 +16,7 @@ api = tp.API(auth)
 # public_tweets = api.home_timeline()
 # for tweets in public_tweets:
 #     print tweets.text
-
 # users = api.search_users('amitabh bacchan', verified = True)
-
 # users = api.friends_ids('screen_name')
 
 query='bhopal'

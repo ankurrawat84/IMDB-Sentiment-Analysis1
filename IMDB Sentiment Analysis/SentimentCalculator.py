@@ -20,16 +20,21 @@ tweetfile = open('/Users/ankurrawat/PycharmProjects/Practice/Practice1/bhopal.tx
 sentanal = {}
 
 for sentence in tweetfile:
+
     poscount = 0
     negcount = 0
     words = sentence.split()
     for word in words:
+        print word
         if word in posset:
             poscount += 1
         elif word in negset:
-            negcount +=1
+            negcount += 1
         else:
             continue
+
+
+
     if poscount > negcount:
         sentiment = 'positive'
     elif negcount > poscount:
@@ -37,8 +42,8 @@ for sentence in tweetfile:
     else:
         sentiment = 'netural'
 
-    sentanal['Sentence']= sentence
-    sentanal['Emotion'] = sentiment
+        sentanal['Sentence']= sentence
+        sentanal['Emotion'] = sentiment
 
 print sentanal
 
